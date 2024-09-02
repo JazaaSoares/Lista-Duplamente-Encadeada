@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1724537071 source:c:\users\ana_j\onedrive\햞ea de trabalho\projetos c c++\ed\lde\main.c
+	"lista.h"
+
+1724537041 c:\users\ana_j\onedrive\햞ea de trabalho\projetos c c++\ed\lde\lista.c
+	"Lista.h"
+	<stdio.h>
+	<stdlib.h>
+
+1725249870 c:\users\ana_j\onedrive\햞ea de trabalho\projetos c c++\ed\lde\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1724537041 source:c:\users\ana_j\onedrive\햞ea de trabalho\projetos c c++\ed\lde\lista.c
+	"Lista.h"
+	<stdio.h>
+	<stdlib.h>
+

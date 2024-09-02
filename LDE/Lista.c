@@ -15,7 +15,7 @@ struct ListaDuplamenteEncadeada {
     int tamanho;
 };
 
-ListaDuplamenteEncadeada* criarLista() {
+  ListaDuplamenteEncadeada* criarLista() {
     ListaDuplamenteEncadeada* lista = (ListaDuplamenteEncadeada*) malloc(sizeof(ListaDuplamenteEncadeada));
     lista->inicio = NULL;
     lista->fim = NULL;
@@ -34,8 +34,8 @@ void inserirElemento(ListaDuplamenteEncadeada* lista, int valor) {
         lista->inicio = novo;
         lista->fim = novo;
     } else {
-        No* atual = lista->inicio;
-        No* anterior = NULL;
+        struct No* atual = lista->inicio; //++
+        struct No* anterior = NULL; // ++
 
         // Procurando posição correta para inserção
         while (atual != NULL && atual->valor < valor) {
@@ -105,10 +105,60 @@ int obterElementoPorPosicao(ListaDuplamenteEncadeada* lista, int posicao) {
     return atual->valor;
 }
 
+int procurarElemento(ListaDuplamenteEncadeada* lista, int valor) {
+   No* atual = lista->inicio;
+   int posicao = 0;
+
+   while (atual != NULL){
+    if (atual->valor == valor){
+        return posicao;
+    }
+    atual = atual->prox;
+    posicao++;
+
+   }
+
+    return -1;
+
+
+}
+
+int tamanhoLista(ListaDuplamenteEncadeada* lista){
+
+    return lista->tamanho;
+
+}
+
+void imprimirLista(ListaDuplamenteEncadeada* lista){
+
+    No* atual = lista->inicio;
+    while (atual != NULL){
+        printf("%d ", atual->valor);
+        atual = atual->prox;
+    }
+    printf("\n");
+
+}
+
+void imprimirListaReversa(ListaDuplamenteEncadeada* lista) {
+
+    No* atual = lista->fim;
+    while (atual != NULL){
+        printf("%d ", atual->valor);
+        atual = atual->ant;
+    }
+
+    printf("\n");
+
+}
+
+
+
+
 void liberarLista(ListaDuplamenteEncadeada* lista) {
     No* atual = lista->inicio;
     while (atual != NULL) {
-        No* proximo = atual->prox;
+       struct No* proximo = atual->prox;
         free(atual);
         atual = proximo;
     }
@@ -117,7 +167,7 @@ void liberarLista(ListaDuplamenteEncadeada* lista) {
 
 
 void menu() {
-    ListaDuplamenteEncadeada* lista = criarLista();
+   struct ListaDuplamenteEncadeada* lista = criarLista();
     int opc, valor, posicao;
 
     do {
@@ -165,29 +215,29 @@ void menu() {
             case 4:
                 printf("Digite o valor a ser procurado: ");
                 scanf("%d", &valor);
-                /*posicao = procurarElemento(lista, valor);
+                posicao = procurarElemento(lista, valor);
                 if (posicao != -1) {
                     printf("Valor encontrado na posição: %d\n", posicao);
                 } else {
                     printf("Valor não encontrado\n");
-                }*/
+                }
                 sleep(2);
                 system("cls || clear");
                 break;
             case 5:
-                /*printf("Tamanho da lista: %d\n", tamanhoLista(lista));*/
+                printf("Tamanho da lista: %d\n", tamanhoLista(lista));
                 sleep(2);
                 system("cls || clear");
                 break;
             case 6:
                 printf("Lista: ");
-               // imprimirLista(lista);
+                imprimirLista(lista);
                 sleep(2);
                 system("cls || clear");
                 break;
             case 7:
                 printf("Lista (reversa): ");
-              //  imprimirListaReversa(lista);
+                imprimirListaReversa(lista);
                 sleep(2);
                 system("cls || clear");
                 break;

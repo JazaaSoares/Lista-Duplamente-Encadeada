@@ -1,3 +1,5 @@
+## TRABALHO 3 DA DISCIPLINA DE ESTRUTURA DE DADOS 🐼
+
 🐸 Operações a serem implementadas:
 01. Criar Lista: Inicializa uma nova lista vazia.
 02. Inserir Elemento: Insere um elemento inteiro na lista, mantendo a ordem crescente.

@@ -16,6 +16,7 @@
 	<stdio.h>
 	<stdlib.h>
 
+<<<<<<< Updated upstream
 1725302635 source:c:\users\ana\documents\lista-duplamente-encadeada\lista-duplamente-encadeada\lde\main.c
 	"lista.h"
 
@@ -24,7 +25,20 @@
 	<stdlib.h>
 
 1725313823 source:c:\users\ana\documents\lista-duplamente-encadeada\lista-duplamente-encadeada\lde\lista.c
+=======
+1725820823 source:c:\users\ana_j\onedrive\Área de trabalho\projetos c c++\ed\lista-duplamente-encadeada\lde\lista.c
+>>>>>>> Stashed changes
 	"Lista.h"
 	<stdio.h>
 	<stdlib.h>
 
+<<<<<<< Updated upstream
+=======
+1725249870 c:\users\ana_j\onedrive\Área de trabalho\projetos c c++\ed\lista-duplamente-encadeada\lde\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1724537071 source:c:\users\ana_j\onedrive\Área de trabalho\projetos c c++\ed\lista-duplamente-encadeada\lde\main.c
+	"lista.h"
+
+>>>>>>> Stashed changes

@@ -111,7 +111,6 @@ int obterElementoPorPosicao(ListaDuplamenteEncadeada* lista, int posicao) {
 }
 
 int procurarElemento(ListaDuplamenteEncadeada* lista, int valor) {
-<<<<<<< Updated upstream
    No* atual = lista->inicio;
    int posicao = 0;
 
@@ -136,10 +135,6 @@ int tamanhoLista(ListaDuplamenteEncadeada* lista){
 }
 
 void imprimirLista(ListaDuplamenteEncadeada* lista){
-
-    No* atual = lista->inicio;
-    while (atual != NULL){
-=======
     No* atual = lista->inicio;
     int posicao = 0;
 
@@ -161,13 +156,10 @@ int tamanhoLista(ListaDuplamenteEncadeada* lista) {
 void imprimirLista(ListaDuplamenteEncadeada* lista) {
     No* atual = lista->inicio;
     while (atual != NULL) {
->>>>>>> Stashed changes
         printf("%d ", atual->valor);
         atual = atual->prox;
     }
     printf("\n");
-<<<<<<< Updated upstream
-
 }
 
 void imprimirListaReversa(ListaDuplamenteEncadeada* lista) {
@@ -182,10 +174,6 @@ void imprimirListaReversa(ListaDuplamenteEncadeada* lista) {
 
 }
 
-
-
-
-=======
 }
 
 void imprimirListaReversa(ListaDuplamenteEncadeada* lista) {
@@ -197,7 +185,6 @@ void imprimirListaReversa(ListaDuplamenteEncadeada* lista) {
     printf("\n");
 }
 
->>>>>>> Stashed changes
 void liberarLista(ListaDuplamenteEncadeada* lista) {
     No* atual = lista->inicio;
     while (atual != NULL) {
@@ -261,45 +248,26 @@ void menu() {
                 if (posicao != -1) {
                     printf("Valor encontrado na posicao: %d\n", posicao);
                 } else {
-<<<<<<< Updated upstream
-                    printf("Valor não encontrado\n");
-                }
-                sleep(2);
-=======
                     printf("Valor nao encontrado\n");
                 }
                 system("pause");
->>>>>>> Stashed changes
                 system("cls || clear");
                 break;
             case 5:
                 printf("Tamanho da lista: %d\n", tamanhoLista(lista));
-<<<<<<< Updated upstream
-                sleep(2);
-=======
                 system("pause");
->>>>>>> Stashed changes
                 system("cls || clear");
                 break;
             case 6:
                 printf("Lista: ");
-<<<<<<< Updated upstream
-                imprimirLista(lista);
-                sleep(2);
-=======
                imprimirLista(lista);
                 system("pause");
->>>>>>> Stashed changes
                 system("cls || clear");
                 break;
             case 7:
                 printf("Lista (reversa): ");
                 imprimirListaReversa(lista);
-<<<<<<< Updated upstream
-                sleep(2);
-=======
                 system("pause");
->>>>>>> Stashed changes
                 system("cls || clear");
                 break;
             case 0:
